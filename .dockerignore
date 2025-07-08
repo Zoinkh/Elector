@@ -1,0 +1,28 @@
+# Ignore the node_modules directory to prevent it from being copied into the Docker image.
+# This is crucial because `npm install` will be run inside the container,
+# ensuring dependencies are built for the correct environment.
+node_modules/
+
+# Ignore .git directory and related files
+.git
+.gitignore
+
+# Ignore Docker-related files
+Dockerfile
+.dockerignore
+
+# Ignore logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore editor/IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore build artifacts if any
+build/
+dist/
+
