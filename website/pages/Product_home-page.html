@@ -12,6 +12,7 @@
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
+      z
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
@@ -39,11 +40,15 @@
 
       <div class="container header-content">
         <div class="d-flex justify-content-between align-items-center py-4">
-          <h1 class="logo">Elector</h1>
+          <a
+            href="Product_home-page.html"
+            class="logo text-decoration-none text-dark"
+            >Elector</a
+          >
 
           <div class="header-icons">
             <div class="icon-wrapper">
-              <a href="./page/Cart.html" target="_self">
+              <a href="./Cart.html">
                 <svg
                   width="20"
                   height="20"
@@ -65,44 +70,42 @@
             </div>
 
             <div class="icon-wrapper">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                />
-              </svg>
-              <!-- <span class="badge text-dark">5</span> -->
-            </div>
-              <!--accoutn logo-->
-            <div class="icon-wrapper">
-              
-              <a href="page/userInfo.html" target="_self">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="8" r="5" />
-                <path d="M20 21a8 8 0 0 0-16 0" />
-              </svg>
+              <a href="User.html" target="_blank">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="8" r="5" />
+                  <path d="M20 21a8 8 0 0 0-16 0" />
+                </svg>
               </a>
             </div>
-            <div>
-              <a href="page/Login.html">Log in</a> / 
-              <a href="page/register.html">Sign Up</a>
+            <div class="icon-wrapper">
+              <a href="Login.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-log-in-icon lucide-log-in"
+                >
+                  <path d="m10 17 5-5-5-5" />
+                  <path d="M15 12H3" />
+                  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -151,13 +154,19 @@
                 </svg>
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="page/lap-com.html">PC & Laptop</a></li>
-                <li><a class="dropdown-item" href="page/phone.html">SmartPhone</a></li>
-                <li><a class="dropdown-item" href="page/headphone.html">Headphone</a></li>
-                <li><a class="dropdown-item" href="page/keyboard.html">Keyboard</a></li>
-                <li><a class="dropdown-item" href="page/gaming.html">Gaming</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">All Categories</a></li>
+                <li>
+                  <a class="dropdown-item" href="lapCom.html">PC & Laptop</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="phone.html">SmartPhone</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="headphone.html">Headphone</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="keyboard.html">Keyboard</a>
+                </li>
+                <li><a class="dropdown-item" href="Gaming.html">Gaming</a></li>
               </ul>
             </div>
 
@@ -180,11 +189,7 @@
               Store Locations
             </a>
 
-            <a
-              href="./page/AboutUs.html"
-              class="nav-link-item"
-              target="_self"
-            >
+            <a href="AboutUs.html" class="nav-link-item">
               <svg
                 width="18"
                 height="18"
@@ -205,7 +210,7 @@
             </a>
           </div>
 
-          <a href="./page/contactUs.html" class="contact-btn" target="_self">
+          <a href="./contactUs.html" class="contact-btn">
             <svg
               width="18"
               height="18"
@@ -308,7 +313,7 @@
                   >
                 </p>
                 <a
-                  href="page/headphone.html"
+                  href="#"
                   class="text-decoration-none fw-semibold fs-6 text-dark bg-warning px-2 py-1 rounded see-more-btn"
                   >See More</a
                 >
@@ -338,7 +343,7 @@
                   >
                 </p>
                 <a
-                  href="page/phone.html"
+                  href="#"
                   class="text-decoration-none fw-semibold fs-6 text-dark bg-warning px-2 py-1 rounded see-more-btn"
                   >See More</a
                 >
@@ -785,7 +790,7 @@
                   class="card shadow-sm rounded overflow-hidden"
                   style="max-width: 350px"
                 >
-                  <a href="page/headphone.html" class="text-decoration-none text-dark">
+                  <a href="#" class="text-decoration-none text-dark">
                     <img
                       src="https://media.istockphoto.com/id/1373017594/photo/headphones-on-the-orange-color-background.jpg?s=612x612&w=0&k=20&c=9SEBT-6kUjIBy33Ga-C9n6CQMd7FOUk3yC89mOAa0ts="
                       loading="lazy"
@@ -811,7 +816,7 @@
                   class="card shadow-sm rounded overflow-hidden"
                   style="max-width: 350px"
                 >
-                  <a href="page/lap-com.html" class="text-decoration-none text-dark">
+                  <a href="#" class="text-decoration-none text-dark">
                     <img
                       src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D"
                       loading="lazy"
@@ -837,7 +842,7 @@
                   class="card shadow-sm rounded overflow-hidden"
                   style="max-width: 350px"
                 >
-                  <a href="page/lap-com.html" class="text-decoration-none text-dark">
+                  <a href="#" class="text-decoration-none text-dark">
                     <img
                       src="https://cdn.pixabay.com/photo/2015/02/07/20/58/tv-627876_1280.jpg"
                       loading="lazy"
@@ -863,7 +868,7 @@
                   class="card shadow-sm rounded overflow-hidden"
                   style="max-width: 350px"
                 >
-                  <a href="page/phone.html" class="text-decoration-none text-dark">
+                  <a href="#" class="text-decoration-none text-dark">
                     <img
                       src="https://media.istockphoto.com/id/2171462566/photo/newly-released-aluminium-iphone-16-pro-mockup-set-with-back-and-front-angles.jpg?s=612x612&w=0&k=20&c=_5xunlPHyvSRjyEZzKpFbpPqrxpNW4Lm9kHz2xn6wmg="
                       loading="lazy"
@@ -889,7 +894,7 @@
                   class="card shadow-sm rounded overflow-hidden"
                   style="max-width: 350px"
                 >
-                  <a href="page/mouse.html" class="text-decoration-none text-dark">
+                  <a href="#" class="text-decoration-none text-dark">
                     <img
                       src="https://plus.unsplash.com/premium_photo-1671611822374-4719df5c89bb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW91c2V8ZW58MHx8MHx8fDA%3D
                   alt="
@@ -916,7 +921,7 @@
                   class="card shadow-sm rounded overflow-hidden"
                   style="max-width: 350px"
                 >
-                  <a href="page/keyboard.html" class="text-decoration-none text-dark">
+                  <a href="#" class="text-decoration-none text-dark">
                     <img
                       src="https://images.unsplash.com/photo-1601445638532-3c6f6c3aa1d6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXB1dGVyJTIwa2V5Ym9hcmR8ZW58MHx8MHx8fDA%3D"
                       loading="lazy"
@@ -942,7 +947,7 @@
                   class="card shadow-sm rounded overflow-hidden"
                   style="max-width: 350px"
                 >
-                  <a href="page/powerBank.html" class="text-decoration-none text-dark">
+                  <a href="#" class="text-decoration-none text-dark">
                     <img
                       src="https://media.istockphoto.com/id/1435246239/photo/smartphone-in-hand-is-charging-from-power-bank.jpg?s=612x612&w=0&k=20&c=OPA-Roiet2b-GrZXJaSCFjI1cz13OwEUaEvepu7BcY8="
                       loading="lazy"
@@ -968,7 +973,7 @@
                   class="card shadow-sm rounded overflow-hidden"
                   style="max-width: 350px"
                 >
-                  <a href="page/usb.html" class="text-decoration-none text-dark">
+                  <a href="#" class="text-decoration-none text-dark">
                     <img
                       src="https://media.istockphoto.com/id/2160946014/photo/hand-holding-usb-flash-drive-with-connecting-to-laptop-at-wooden-table.jpg?s=612x612&w=0&k=20&c=RlSMZYv65eRRRNgxb5PErg2vmiZjjdliq5nrgst1jSM="
                       loading="lazy"
@@ -1471,6 +1476,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="homeScript.js"></script>
   </body>
 </html>
