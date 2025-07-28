@@ -1486,3 +1486,29 @@ body {
   border-radius: 8px;
   text-align: center;
 }
+
+ #map {
+      height: 400px;
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .store-card {
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: 0.2s;
+    }
+
+    .store-card:hover {
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      #map {
+        height: 300px;
+      }
+    }
